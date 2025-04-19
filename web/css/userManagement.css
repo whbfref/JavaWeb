@@ -1,0 +1,99 @@
+body, h1, h2, h3, p, ul, li, a, table, tr, td, th, input, button, form, label, select {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1, header h2 {
+    color: #333;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+}
+
+.user-list {
+    flex: 1;
+    min-width: 400px;
+}
+
+.user-list h3 {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.user-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-list th, .user-list td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.user-list th {
+    background-color: #f4f4f4;
+}
+
+.user-list button {
+    margin-left: 10px;
+}
+
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+}
+
+.btn-edit {
+    background-color: #2196F3;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #1e88e5;
+}
+
+.btn-delete {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #e53935;
+}
+
+.btn-submit {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}

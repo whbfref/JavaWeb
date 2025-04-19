@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.recommendations, .rankings {
+    flex: 1;
+    margin: 0 10px;
+}
+.rankings {
+    margin-left: 10px;
+}
+.carousel {
+    flex: 2;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#box .left:hover, #box .right:hover {
+    opacity: 1;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+li {
+    margin-bottom: 10px;
+}

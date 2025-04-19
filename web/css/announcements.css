@@ -1,0 +1,97 @@
+/* 通用样式 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 公告栏容器 */
+.announcement-bar {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 公告标题 */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* 公告列表 */
+.announcements {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.announcements li {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    color: #555;
+}
+
+.announcements li:last-child {
+    border-bottom: none;
+}
+
+/* 管理公告样式 */
+#admin-interface {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#admin-interface h3 {
+    margin-top: 0;
+}
+
+/* 输入框和文本区域样式 */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* 按钮样式 */
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* 响应式样式 */
+@media (max-width: 600px) {
+    .announcement-bar {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

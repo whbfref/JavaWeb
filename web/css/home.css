@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+
+.clearFix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#box {
+    position: relative;
+    width: 500px;
+    height: 290px;
+    margin: 5px auto;
+    overflow: hidden;
+}
+
+#box .imglist {
+    position: absolute;
+    left: -500px;
+    top: 0;
+    width: 3500px;
+    height: 290px;
+}
+
+#box .imglist li {
+    float: left;
+    width: 500px;
+    height: 290px;
+}
+
+#box .imglist li img {
+    width: 500px;
+    height: 290px;
+}
+
+#box span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 50px;
+    background-color: rgba(200, 200, 200, 0.7);
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#box .left {
+    left: 0;
+}
+
+#box .right {
+    right: 0;
+}
+
+#box .btnlist {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    overflow: hidden;
+}
+
+#box .btnlist li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+#box .btnlist li.current {
+    background-color: red;
+}
